@@ -1,0 +1,17 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.adapterTargetName": "esp32s3",
+  "files.associations": {
+    "gpio.h": "c",
+    "esp_system.h": "c",
+    "freertos.h": "c",
+    "ledc.h": "c",
+    "pulse_cnt.h": "c",
+    "pid.h": "c",
+    "main.h": "c"
+  },
+  "idf.openOcdConfigs": [
+    "board/esp32s3-bridge.cfg"
+  ],
+  "C_Cpp.default.compilerPath": "D:\\Espressif\\tools\\xtensa-esp32s3-elf\\esp-2022r1-11.2.0\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe"
+}
