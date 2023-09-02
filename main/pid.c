@@ -13,7 +13,7 @@
  ********************************************************************************/
 
 #include <pid.h>
-
+#include "motor_ctrl.h"
 /********************************************************************************
  * Class PID controller
  ********************************************************************************/
@@ -41,13 +41,13 @@ float PidComputeAngle(PidInputData_t input_data)
 {
     
     input_data.error = input_data.reference - input_data.feedback;
-    if(input_data.error>180)
+    if(input_data.error>PI)
     {
-        input_data.error-=360;
+        input_data.error-=2*PI;
     }
-    if(input_data.error<-180)
+    if(input_data.error<-PI)
     {
-        input_data.error+=360;
+        input_data.error+=2*PI;
     }
     input_data.proportionalComponent = input_data.coefficient_t.proportional * input_data.error;
 

@@ -14,15 +14,13 @@
 #include "esp_system.h" //SysLog Lib
 #include "esp_log.h"
 #include "esp_err.h"
+#include "nvs_flash.h"
 #include "pid.h" //PID Lib
+#include "motor_ctrl.h"//User lib
 
 // Param Settings
 #define buffer_size_unit 1024
-// PWM
-#define motor_ctrl_pwm_max 4095
-#define motor_ctrl_pwm_min 0
-#define motor_ctrl_pwm_max_limit 3000
-#define motor_ctrl_pwm_min_limit -3000
+
 
 
 
